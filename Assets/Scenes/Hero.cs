@@ -17,7 +17,7 @@ public class Hero : MonoBehaviour
 
     private void Awake()
     {
-        //Instance = this;
+        Instance = this;
         rb = GetComponent<Rigidbody2D>();
         //animator = GetComponent<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
