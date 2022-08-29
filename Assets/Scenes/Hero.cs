@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero : MonoBehaviour
+public class Hero : Entity
 {
     [SerializeField] private float speed = 3f;
     [SerializeField] private int lives = 3;
-    [SerializeField] private float jumpForce = 0.01f;
+    [SerializeField] private float jumpForce = 10f;
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
@@ -17,7 +17,7 @@ public class Hero : MonoBehaviour
 
     private void Awake()
     {
-        //Instance = this;
+        Instance = this;
         rb = GetComponent<Rigidbody2D>();
         //animator = GetComponent<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();

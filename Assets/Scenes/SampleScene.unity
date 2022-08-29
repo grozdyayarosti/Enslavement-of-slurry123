@@ -1334,8 +1334,9 @@ GameObject:
   - component: {fileID: 1807541486}
   - component: {fileID: 1807541488}
   - component: {fileID: 1807541487}
+  - component: {fileID: 1807541489}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Grib
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1404,6 +1405,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4253798, y: 1.4581013}
   m_EdgeRadius: 0
+--- !u!114 &1807541489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807541485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae401e55f15212f418ca5602922e2498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
 --- !u!1 &1855282563
 GameObject:
   m_ObjectHideFlags: 0
